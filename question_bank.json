@@ -1,0 +1,1297 @@
+{
+  "Unit 1: Introduction to Python": {
+    "Basics and Data Types": [
+      {
+        "q": "Who created the Python programming language?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Dennis Ritchie", "B) Guido van Rossum", "C) James Gosling", "D) Bjarne Stroustrup"],
+        "ans": "B",
+        "explanation": "Python was created by Guido van Rossum and released in 1991."
+      },
+      {
+        "q": "Which of these is NOT a valid variable name in Python?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) my_var", "B) _myVar", "C) 2nd_var", "D) var2"],
+        "ans": "C",
+        "explanation": "Variable names in Python cannot start with a digit."
+      },
+      {
+        "q": "Which data type is used to store text in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "str",
+        "explanation": "Textual data in Python is stored in 'str' (string) data type."
+      },
+      {
+        "q": "Which of the following is a mutable data type?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Tuple", "B) String", "C) List", "D) Integer"],
+        "ans": "C",
+        "explanation": "Lists are mutable, meaning their items can be altered after creation."
+      },
+      {
+        "q": "What is the file extension of a Python script?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": ".py",
+        "explanation": "Python files are saved with the extension .py."
+      },
+      {
+        "q": "What will type(3.14) return?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) int", "B) float", "C) double", "D) dec"],
+        "ans": "B",
+        "explanation": "Floating-point numbers represent decimals in Python."
+      },
+      {
+        "q": "Which built-in function returns the data type of an object?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "type",
+        "explanation": "type() returns the class type of the object passed to it."
+      },
+      {
+        "q": "Python code is compiled into machine code directly. True or False?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) True", "B) False", "C) Sometimes", "D) Depends on OS"],
+        "ans": "B",
+        "explanation": "False. Python is an interpreted language; code is converted into bytecode first."
+      },
+      {
+        "q": "Which of the following is a complex number representation in Python?",
+        "type": "mcq",
+        "difficulty": "Hard", "options": ["A) 3 + 4i", "B) 3 + 4j", "C) 3 + 4k", "D) complex(3,4i)"],
+        "ans": "B",
+        "explanation": "Python uses 'j' or 'J' to denote the imaginary part of a complex number."
+      },
+      {
+        "q": "Which keyword is used to declare a constant in Python?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) const", "B) final", "C) static", "D) None of these"],
+        "ans": "D",
+        "explanation": "Python does not have a dedicated constant keyword; naming convention (ALL_CAPS) is used instead."
+      }
+      ,
+      {
+        "q": "What is the output of 2 ** 3 ** 2 ?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 64", "B) 512", "C) 256", "D) 36"],
+        "ans": "B",
+        "explanation": "Exponentiation is right-associative: 3**2=9, then 2**9=512."
+      },
+      {
+        "q": "Which operator has the highest precedence?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) +", "B) *", "C) **", "D) and"],
+        "ans": "C",
+        "explanation": "The exponentiation operator (**) has the highest precedence among arithmetic operators."
+      },
+      {
+        "q": "What does the //= operator do?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Floor divide and assign", "B) Divide and assign", "C) Power and assign", "D) Modulus and assign"],
+        "ans": "A",
+        "explanation": "x //= 3 is the same as x = x // 3 (floor division assignment)."
+      },
+      {
+        "q": "What is the result of 5 | 3 (bitwise OR)?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 1", "B) 7", "C) 15", "D) 0"],
+        "ans": "B",
+        "explanation": "Binary 101 | 011 = 111 which is 7 in decimal."
+      },
+      {
+        "q": "Which operator is used for identity comparison?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "is",
+        "explanation": "The 'is' operator checks whether two variables refer to the same object."
+      },
+      {
+        "q": "What is the output of not (True or False)?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) True", "B) False", "C) None", "D) Error"],
+        "ans": "B",
+        "explanation": "True or False = True, then not True = False."
+      },
+      {
+        "q": "Which operator performs bitwise XOR?",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "^",
+        "explanation": "The caret (^) operator performs bitwise exclusive OR."
+      },
+      {
+        "q": "What is 10 >> 1 equal to?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 5", "B) 20", "C) 10", "D) 1"],
+        "ans": "A",
+        "explanation": "Right shift by 1 bit is equivalent to integer division by 2. 10>>1 = 5."
+      }
+    ],
+
+    "Operators": [
+      {
+        "q": "What is the output of 10 % 3?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) 3", "B) 1", "C) 0", "D) 3.33"],
+        "ans": "B",
+        "explanation": "The modulus operator (%) returns the remainder of 10 divided by 3, which is 1."
+      },
+      {
+        "q": "Which operator is used for exponentiation (power) in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "**",
+        "explanation": "The ** operator computes power (e.g., 2**3 = 8)."
+      },
+      {
+        "q": "What is the result of 7 // 2?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) 3.5", "B) 3", "C) 4", "D) 3.0"],
+        "ans": "B",
+        "explanation": "Floor division // drops the fractional part and returns integer 3."
+      },
+      {
+        "q": "Which operator checks if two values are equal?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "==",
+        "explanation": "The == operator evaluates to True if operands on both sides are equal."
+      },
+      {
+        "q": "What is the output of: True and False?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) True", "B) False", "C) None", "D) Error"],
+        "ans": "B",
+        "explanation": "Logical 'and' evaluates to True only when both expressions are True."
+      },
+      {
+        "q": "Which operator is used to check membership in a collection?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) exists", "B) is", "C) in", "D) has"],
+        "ans": "C",
+        "explanation": "'in' operator checks if a specified value exists within a sequence or collection."
+      },
+      {
+        "q": "The 'is' operator checks for value equality. True or False?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) True", "B) False", "C) Depends on value", "D) True for numbers only"],
+        "ans": "B",
+        "explanation": "False. 'is' checks for memory identity (address), whereas '==' checks for value equality."
+      },
+      {
+        "q": "What is the result of bitwise AND of 5 & 3?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 1", "B) 7", "C) 15", "D) 0"],
+        "ans": "A",
+        "explanation": "Binary 101 (5) & 011 (3) = 001 (1)."
+      },
+      {
+        "q": "Which logical operator inverts the boolean state of its operand?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "not",
+        "explanation": "The 'not' operator flips True to False and vice-versa."
+      }
+      ,
+      {
+        "q": "What is the output of 2 ** 3 ** 2 ?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 64", "B) 512", "C) 256", "D) 36"],
+        "ans": "B",
+        "explanation": "Exponentiation is right-associative: 3**2=9, then 2**9=512."
+      },
+      {
+        "q": "Which operator has the highest precedence?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) +", "B) *", "C) **", "D) and"],
+        "ans": "C",
+        "explanation": "The exponentiation operator (**) has the highest precedence among arithmetic operators."
+      },
+      {
+        "q": "What does the //= operator do?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Floor divide and assign", "B) Divide and assign", "C) Power and assign", "D) Modulus and assign"],
+        "ans": "A",
+        "explanation": "x //= 3 is the same as x = x // 3 (floor division assignment)."
+      },
+      {
+        "q": "What is the result of 5 | 3 (bitwise OR)?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 1", "B) 7", "C) 15", "D) 0"],
+        "ans": "B",
+        "explanation": "Binary 101 | 011 = 111 which is 7 in decimal."
+      },
+      {
+        "q": "Which operator is used for identity comparison?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "is",
+        "explanation": "The 'is' operator checks whether two variables refer to the same object."
+      },
+      {
+        "q": "What is the output of not (True or False)?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) True", "B) False", "C) None", "D) Error"],
+        "ans": "B",
+        "explanation": "True or False = True, then not True = False."
+      },
+      {
+        "q": "Which operator performs bitwise XOR?",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "^",
+        "explanation": "The caret (^) operator performs bitwise exclusive OR."
+      },
+      {
+        "q": "What is 10 >> 1 equal to?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 5", "B) 20", "C) 10", "D) 1"],
+        "ans": "A",
+        "explanation": "Right shift by 1 bit is equivalent to integer division by 2. 10>>1 = 5."
+      }
+    ],
+
+    "Input Output and Type Casting": [
+      {
+        "q": "Which function outputs data to the console?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "print",
+        "explanation": "print() displays formatted output on the terminal."
+      },
+      {
+        "q": "What is the default return type of input() function?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) int", "B) float", "C) str", "D) bool"],
+        "ans": "C",
+        "explanation": "input() function always returns user entry as a string (str)."
+      },
+      {
+        "q": "How do you cast a string '15' into an integer?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) convert(15)", "B) int('15')", "C) str(15)", "D) cast('15')"],
+        "ans": "B",
+        "explanation": "int() function performs explicit conversion of a numeric string to an integer."
+      },
+      {
+        "q": "What does the 'sep' parameter do in print()?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Ends the line", "B) Specifies string separator", "C) Flushes buffer", "D) Formats float"],
+        "ans": "B",
+        "explanation": "'sep' defines the separator character placed between multiple arguments."
+      },
+      {
+        "q": "Which function converts an integer to a float?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "float",
+        "explanation": "float() converts an integer or compatible string into a floating-point number."
+      },
+      {
+        "q": "Converting types automatically by Python is known as ____ casting.",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "implicit",
+        "explanation": "Automatic conversion performed by Python interpreter is implicit type conversion (coercion)."
+      },
+      {
+        "q": "What is the output of print('A', 'B', sep='*')?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) A B", "B) A*B", "C) AB*", "D) *AB"],
+        "ans": "B",
+        "explanation": "'sep=*' places an asterisk between 'A' and 'B'."
+      }
+      ,
+      {
+        "q": "What does print(end='') do?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Prints empty line", "B) Removes newline", "C) Causes error", "D) Prints None"],
+        "ans": "B",
+        "explanation": "end='' stops print from adding a newline at the end."
+      },
+      {
+        "q": "Which function converts a number to string?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "str",
+        "explanation": "str() converts any data type into its string representation."
+      },
+      {
+        "q": "What will happen if you do int('3.14')?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Returns 3", "B) Returns 3.14", "C) ValueError", "D) Returns 314"],
+        "ans": "C",
+        "explanation": "int() cannot directly convert a float-string. It raises ValueError."
+      },
+      {
+        "q": "How do you take multiple inputs in one line?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) input().split()", "B) multi_input()", "C) scan()", "D) read()"],
+        "ans": "A",
+        "explanation": "input().split() reads a line and splits it into a list of strings."
+      },
+      {
+        "q": "What is the purpose of the eval() function?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Evaluate string as code", "B) Convert to float", "C) Check syntax", "D) Print value"],
+        "ans": "A",
+        "explanation": "eval() parses and evaluates a string as a Python expression."
+      },
+      {
+        "q": "Which parameter of print() controls the ending character?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "end",
+        "explanation": "The 'end' parameter decides what is printed at the end of the line."
+      },
+      {
+        "q": "What does f-string stand for?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Fast string", "B) Formatted string", "C) Float string", "D) File string"],
+        "ans": "B",
+        "explanation": "f-strings (formatted string literals) allow embedding expressions inside string literals."
+      },
+      {
+        "q": "How do you convert a list to a tuple?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "tuple",
+        "explanation": "The tuple() constructor converts any iterable (like list) into a tuple."
+      },
+      {
+        "q": "What is the output of print(f'{5+3}') ?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) 5+3", "B) 8", "C) {5+3}", "D) Error"],
+        "ans": "B",
+        "explanation": "f-strings evaluate expressions inside curly braces. 5+3 becomes 8."
+      }
+      
+    ]
+  }
+  ,
+  "Unit 2: Control Statements and Functions": {
+    "Conditional Statements": [
+      {
+        "q": "Which keyword is used for decision making in Python?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) switch", "B) if", "C) for", "D) def"],
+        "ans": "B",
+        "explanation": "The 'if' keyword is used to start a conditional statement in Python."
+      },
+      {
+        "q": "What is the correct syntax for else-if in Python?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) else if", "B) elseif", "C) elif", "D) elsif"],
+        "ans": "C",
+        "explanation": "Python uses 'elif' as the short form of else-if."
+      },
+      {
+        "q": "What will be the output of: if 0: print('Hello')?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Hello", "B) 0", "C) Nothing", "D) Error"],
+        "ans": "C",
+        "explanation": "0 is treated as False in Python, so the if block does not execute."
+      },
+      {
+        "q": "Which block runs when none of the if/elif conditions are True?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "else",
+        "explanation": "The else block executes only when all previous conditions fail."
+      },
+      {
+        "q": "What is the output of: print('Yes' if 5 > 2 else 'No')?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Yes", "B) No", "C) True", "D) Error"],
+        "ans": "A",
+        "explanation": "This is a ternary operator. Since 5 > 2 is True, it prints 'Yes'."
+      },
+      {
+        "q": "Can we write an if statement without else?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Yes", "B) No", "C) Only in loops", "D) Only with elif"],
+        "ans": "A",
+        "explanation": "else is completely optional in Python."
+      },
+      {
+        "q": "Which of the following is a falsy value in Python?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) 1", "B) 'Hello'", "C) []", "D) True"],
+        "ans": "C",
+        "explanation": "Empty list [] is considered False in boolean context."
+      },
+      {
+        "q": "What does the pass statement do inside an if block?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Skips the block", "B) Does nothing", "C) Throws error", "D) Exits program"],
+        "ans": "B",
+        "explanation": "pass is a null statement. It is used as a placeholder when no code is needed."
+      },
+      {
+        "q": "Which operator is mostly used in if conditions for comparison?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "==",
+        "explanation": "The == operator is used to compare two values for equality."
+      },
+      {
+        "q": "What is nested if?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) if inside loop", "B) if inside another if", "C) if without else", "D) Multiple elif"],
+        "ans": "B",
+        "explanation": "When an if statement is written inside another if, it is called nested if."
+      },
+      {
+        "q": "Is indentation mandatory in if-else statements?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Yes", "B) No", "C) Only for else", "D) Optional"],
+        "ans": "A",
+        "explanation": "Python uses indentation to define blocks. Missing indentation causes IndentationError."
+      },
+      {
+        "q": "What will be the output of: x = 10; print('Even' if x % 2 == 0 else 'Odd')?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Even", "B) Odd", "C) 10", "D) Error"],
+        "ans": "A",
+        "explanation": "10 is completely divisible by 2, so it prints Even."
+      }
+    ],
+
+    "Loops": [
+      {
+        "q": "Which loop is used when number of iterations is known?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) while", "B) for", "C) do-while", "D) if"],
+        "ans": "B",
+        "explanation": "for loop is preferred when we know how many times the loop should run."
+      },
+      {
+        "q": "Which keyword is used to exit a loop completely?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "break",
+        "explanation": "break immediately terminates the nearest enclosing loop."
+      },
+      {
+        "q": "Which keyword skips the current iteration of a loop?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "continue",
+        "explanation": "continue skips the remaining code of current iteration and jumps to next iteration."
+      },
+      {
+        "q": "What does range(5) generate?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) 1 2 3 4 5", "B) 0 1 2 3 4", "C) 0 1 2 3 4 5", "D) 5 4 3 2 1"],
+        "ans": "B",
+        "explanation": "range(5) generates numbers from 0 to 4 (stop value is exclusive)."
+      },
+      {
+        "q": "What is the output of: for i in range(2, 8, 2): print(i)?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) 2 4 6 8", "B) 2 4 6", "C) 2 3 4 5 6 7", "D) 8 6 4 2"],
+        "ans": "B",
+        "explanation": "range(2,8,2) starts at 2, stops before 8, step 2 → 2,4,6."
+      },
+      {
+        "q": "Which loop checks the condition before executing the body?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) for", "B) while", "C) do-while", "D) Both A and B"],
+        "ans": "D",
+        "explanation": "Both for and while are entry-controlled loops in Python."
+      },
+      {
+        "q": "What is an infinite loop?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Loop that never starts", "B) Loop that runs forever", "C) Loop with break", "D) Empty loop"],
+        "ans": "B",
+        "explanation": "A loop whose condition never becomes False is called an infinite loop."
+      },
+      {
+        "q": "Which statement is used as a placeholder in loops?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "pass",
+        "explanation": "pass does nothing and is used when a statement is required syntactically."
+      },
+      {
+        "q": "Can a for loop be used with strings?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Yes", "B) No", "C) Only with lists", "D) Only with range"],
+        "ans": "A",
+        "explanation": "for loop can iterate over any iterable including strings, lists, tuples etc."
+      },
+      {
+        "q": "What is the output of: i=0; while i<3: print(i); i+=1?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) 0 1 2", "B) 1 2 3", "C) 0 1 2 3", "D) Infinite loop"],
+        "ans": "A",
+        "explanation": "i starts from 0 and increments till it becomes 3, so it prints 0 1 2."
+      },
+      {
+        "q": "Which function is commonly used with for loop to generate numbers?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "range",
+        "explanation": "range() is the most common function used to generate a sequence of numbers for for-loops."
+      },
+      {
+        "q": "What does the else block of a for loop do?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Always runs", "B) Runs if loop completes without break", "C) Runs only on error", "D) Never runs"],
+        "ans": "B",
+        "explanation": "The else block of a loop executes only when the loop finishes normally (no break)."
+      },
+      {
+        "q": "How do you write an infinite while loop?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) while True:", "B) while 1:", "C) while(True):", "D) All of these"],
+        "ans": "D",
+        "explanation": "All three forms create an infinite loop because the condition is always True."
+      }
+    ]
+    ,
+    "Functions": [
+      {
+        "q": "Which keyword is used to define a function in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "def",
+        "explanation": "The 'def' keyword is used to declare user-defined functions in Python."
+      },
+      {
+        "q": "Which statement sends a value back from a function to its caller?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "return",
+        "explanation": "'return' statement exits the function and sends an optional result back."
+      },
+      {
+        "q": "What does a function return by default if no return statement is specified?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) 0", "B) False", "C) None", "D) Error"],
+        "ans": "C",
+        "explanation": "In Python, functions implicitly return None if no explicit return value is specified."
+      },
+      {
+        "q": "Which keyword is used to create small anonymous (inline) functions?",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "lambda",
+        "explanation": "Lambda functions are single-expression anonymous functions defined without 'def'."
+      },
+      {
+        "q": "Which parameter syntax allows passing a variable number of positional arguments?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) *args", "B) **kwargs", "C) &args", "D) ...args"],
+        "ans": "A",
+        "explanation": "*args packs arbitrary positional arguments into a tuple."
+      },
+      {
+        "q": "Which parameter syntax is used for variable keyword arguments?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) *args", "B) **kwargs", "C) $kwargs", "D) #kwargs"],
+        "ans": "B",
+        "explanation": "**kwargs packs arbitrary keyword arguments into a dictionary."
+      },
+      {
+        "q": "A function that calls itself is called a ____ function.",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "recursive",
+        "explanation": "Recursion occurs when a function calls itself to solve smaller sub-problems."
+      },
+      {
+        "q": "What are parameters with default values called?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Required arguments", "B) Default arguments", "C) Variable arguments", "D) Keyword arguments"],
+        "ans": "B",
+        "explanation": "Default arguments assign default values to parameters if omitted during function call."
+      },
+      {
+        "q": "Can a Python function return multiple values?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Yes, returned as a Tuple", "B) No", "C) Only up to 2 values", "D) Only using lists"],
+        "ans": "A",
+        "explanation": "Python allows returning multiple comma-separated values, automatically packed into a tuple."
+      },
+      {
+        "q": "What is the lifetime of a local variable inside a function?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Until program ends", "B) Only while function executes", "C) Permanent", "D) Depends on OS"],
+        "ans": "B",
+        "explanation": "Local variables are created when function runs and destroyed when it completes."
+      },
+      {
+        "q": "How do you modify a global variable inside a function?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Use 'global' keyword", "B) Directly assign value", "C) Use 'super'", "D) Cannot be modified"],
+        "ans": "A",
+        "explanation": "Declaring 'global var_name' inside a function allows modifying the global instance."
+      },
+      {
+        "q": "What is docstring in Python functions?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Comment line", "B) Documentation string in triple quotes", "C) Error message", "D) Type hint"],
+        "ans": "B",
+        "explanation": "A docstring is a documentation string placed right below function definition."
+      }
+    ],
+
+    "Lists Tuples and Dictionaries": [
+      {
+        "q": "Which method adds a single element to the end of a list?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "append",
+        "explanation": "list.append(item) inserts the specified element at the end of the list."
+      },
+      {
+        "q": "Lists are mutable, while Tuples are ____.",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "immutable",
+        "explanation": "Tuples cannot be altered, added to, or modified after instantiation."
+      },
+      {
+        "q": "Which function returns the total number of items in a list or dictionary?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "len",
+        "explanation": "len() returns the length (count of elements) of a sequence or collection."
+      },
+      {
+        "q": "What is the output of [1, 2, 3] + [4, 5]?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) [1,2,3,4,5]", "B) [5, 7]", "C) [[1,2,3],[4,5]]", "D) Error"],
+        "ans": "A",
+        "explanation": "The '+' operator concatenates two lists into a single combined list."
+      },
+      {
+        "q": "How do you create a tuple with a single element '5'?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) (5)", "B) (5,)", "C) tuple(5)", "D) [5]"],
+        "ans": "B",
+        "explanation": "A single element tuple requires a trailing comma, e.g., (5,)."
+      },
+      {
+        "q": "Which dictionary method returns a list-like view of all keys?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) dict.get()", "B) dict.keys()", "C) dict.values()", "D) dict.items()"],
+        "ans": "B",
+        "explanation": "dict.keys() returns all keys present in the dictionary."
+      },
+      {
+        "q": "Which list method removes and returns the last element by default?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) remove()", "B) delete()", "C) pop()", "D) clear()"],
+        "ans": "C",
+        "explanation": "list.pop() removes the element at given index (or last item if index omitted) and returns it."
+      },
+      {
+        "q": "How do you access value associated with key 'age' in dictionary student?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) student.age", "B) student['age']", "C) student(age)", "D) student->age"],
+        "ans": "B",
+        "explanation": "Dictionary elements are accessed using square brackets with the key name."
+      },
+      {
+        "q": "What method clears all elements from a dictionary or list?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "clear",
+        "explanation": "The clear() method empties a list, set, or dictionary completely."
+      },
+      {
+        "q": "What is the output of my_list[1:3] for my_list = [10, 20, 30, 40, 50]?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) [10, 20]", "B) [20, 30]", "C) [20, 30, 40]", "D) [10, 20, 30]"],
+        "ans": "B",
+        "explanation": "Slicing [1:3] starts at index 1 (20) and stops before index 3 (30)."
+      },
+      {
+        "q": "Which dictionary method gets a key's value safely without throwing KeyError if missing?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) find()", "B) search()", "C) get()", "D) fetch()"],
+        "ans": "C",
+        "explanation": "dict.get(key) returns None (or a default value) instead of raising KeyError if key is missing."
+      },
+      {
+        "q": "What is the output of tuple([1, 2, 3])?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) [1, 2, 3]", "B) (1, 2, 3)", "C) {1, 2, 3}", "D) Error"],
+        "ans": "B",
+        "explanation": "tuple() constructor converts any iterable like list into a tuple."
+      }
+    ]
+  }
+  ,
+  "Unit 3: Object Oriented Programming": {
+    "Classes and Objects": [
+      {
+        "q": "Which keyword is used to define a class in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "class",
+        "explanation": "The 'class' keyword is used to declare a user-defined blueprint in Python."
+      },
+      {
+        "q": "What is the special constructor method called in Python classes?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "__init__",
+        "explanation": "__init__() runs automatically when an instance (object) of a class is instantiated."
+      },
+      {
+        "q": "What parameter must be explicitly passed as the first parameter to instance methods?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "self",
+        "explanation": "'self' represents the instance of the class and binds attributes to the given object."
+      },
+      {
+        "q": "What is an instance of a class called?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Function", "B) Object", "C) Attribute", "D) Variable"],
+        "ans": "B",
+        "explanation": "An object is a specific realization/instance of a class blueprint."
+      },
+      {
+        "q": "Variables defined directly inside a class (outside methods) are called?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Instance variables", "B) Class variables", "C) Local variables", "D) Global variables"],
+        "ans": "B",
+        "explanation": "Class variables are shared among all instances of that class."
+      },
+      {
+        "q": "Variables bound to 'self' inside methods are called?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Class variables", "B) Instance variables", "C) Static variables", "D) Global variables"],
+        "ans": "B",
+        "explanation": "Instance variables belong uniquely to each specific object instance."
+      },
+      {
+        "q": "Which destructor method is called when an object is destroyed?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) __destroy__", "B) __del__", "C) __remove__", "D) __exit__"],
+        "ans": "B",
+        "explanation": "__del__() is invoked when the object reference count reaches zero or deleted using 'del'."
+      },
+      {
+        "q": "How do you instantiate an object of class Student?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) s = new Student()", "B) s = Student()", "C) s = create Student()", "D) Student s = Student()"],
+        "ans": "B",
+        "explanation": "Python instantiates objects by calling the class name as if it were a function."
+      },
+      {
+        "q": "What does isinstance(obj, ClassName) return?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) True if obj is instance of ClassName", "B) The object memory address", "C) The class type", "D) Error"],
+        "ans": "A",
+        "explanation": "isinstance() checks whether an object is an instance of a specified class or subclass."
+      },
+      {
+        "q": "Which decorator is used to define a static method in a class?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) @classmethod", "B) @staticmethod", "C) @staticmethod()", "D) @method"],
+        "ans": "B",
+        "explanation": "@staticmethod decorator defines a method that doesn't receive implicit 'self' or 'cls'."
+      }
+    ],
+
+    "Inheritance": [
+      {
+        "q": "What is inheritance in Object-Oriented Programming?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Hiding data", "B) Reusing parent class properties in child class", "C) Creating new classes", "D) Deleting methods"],
+        "ans": "B",
+        "explanation": "Inheritance allows a derived (child) class to inherit attributes/methods from a base (parent) class."
+      },
+      {
+        "q": "Which built-in function calls a method from the parent class?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "super",
+        "explanation": "super() returns a proxy object that delegates method calls to a parent/sibling class."
+      },
+      {
+        "q": "If Class B inherits from Class A, how is it written in Python?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) class B extends A:", "B) class B(A):", "C) class B inherits A:", "D) class B : A:"],
+        "ans": "B",
+        "explanation": "Inheritance syntax puts the parent class name inside parentheses after child class name."
+      },
+      {
+        "q": "Inheriting from multiple parent classes into a single child class is called?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Single Inheritance", "B) Multilevel Inheritance", "C) Multiple Inheritance", "D) Hierarchical Inheritance"],
+        "ans": "C",
+        "explanation": "Multiple inheritance occurs when a child class derives from more than one base class."
+      },
+      {
+        "q": "A class hierarchy A -> B -> C represents which type of inheritance?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Multiple", "B) Multilevel", "C) Single", "D) Hybrid"],
+        "ans": "B",
+        "explanation": "Multilevel inheritance forms a chain where a derived class inherits from another derived class."
+      },
+      {
+        "q": "Redefining a parent class method inside a child class is called method ____.",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "overriding",
+        "explanation": "Method overriding allows a child class to provide a specific implementation of a parent's method."
+      },
+      {
+        "q": "What is MRO in Python inheritance?",
+        "type": "mcq",
+        "difficulty": "Hard", "options": ["A) Method Resolution Order", "B) Main Reference Object", "C) Memory Redirection Option", "D) Method Reordering Operation"],
+        "ans": "A",
+        "explanation": "MRO (Method Resolution Order) defines the order in which Python searches for methods in class hierarchy."
+      },
+      {
+        "q": "Which method displays the MRO of a class?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Class.mro()", "B) Class.__mro__", "C) Both A and B", "D) Class.order()"],
+        "ans": "C",
+        "explanation": "Both Class.mro() method and Class.__mro__ attribute show the Method Resolution Order."
+      },
+      {
+        "q": "What function checks if a class is a subclass of another class?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "issubclass",
+        "explanation": "issubclass(Child, Parent) checks if a class is derived from a specified base class."
+      }
+    ],
+
+    "Polymorphism and Encapsulation": [
+      {
+        "q": "What does the word 'Polymorphism' literally mean?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Single form", "B) Many forms", "C) Data hiding", "D) Code duplication"],
+        "ans": "B",
+        "explanation": "Polymorphism originates from Greek meaning 'having multiple forms'."
+      },
+      {
+        "q": "Restricting direct access to data attributes using private/protected access modifiers is called?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "encapsulation",
+        "explanation": "Encapsulation binds data and code together, restricting external direct manipulation."
+      },
+      {
+        "q": "How do you declare a private variable inside a Python class?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) private var", "B) _var", "C) __var", "D) var_private"],
+        "ans": "C",
+        "explanation": "A double leading underscore (__var) triggers name mangling, making the attribute private."
+      },
+      {
+        "q": "A single leading underscore (_var) indicates an attribute is intended as ____.",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) Public", "B) Protected", "C) Private", "D) Global"],
+        "ans": "B",
+        "explanation": "A single underscore prefix (_var) is a convention indicating protected status."
+      },
+      {
+        "q": "Does Python support traditional method overloading (same method name, different parameter types)?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Yes", "B) No, last defined method overwrites previous", "C) Only with decorators", "D) Only in C-extensions"],
+        "ans": "B",
+        "explanation": "Python does not support traditional method overloading; defining multiple methods with same name overrides earlier ones."
+      },
+      {
+        "q": "Defining custom behavior for operators (+, -, *) on custom objects is called operator ____.",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "overloading",
+        "explanation": "Operator overloading allows standard operators to work on user-defined class objects via dunder methods."
+      },
+      {
+        "q": "Which magic method (dunder method) overloads the '+' operator?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) __plus__", "B) __add__", "C) __concat__", "D) __sum__"],
+        "ans": "B",
+        "explanation": "__add__(self, other) overloads the addition (+) operator for a class."
+      },
+      {
+        "q": "Hiding internal complex implementation details and exposing only essential interface is called?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "abstraction",
+        "explanation": "Abstraction presents a simple interface while concealing background logic details."
+      },
+      {
+        "q": "Which module in Python is used to define Abstract Base Classes?",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "abc",
+        "explanation": "The 'abc' (Abstract Base Classes) module provides infrastructure for defining abstract classes."
+      }
+    ]
+  }
+  ,
+  "Unit 4: Exception and File Handling": {
+    "Exception Handling": [
+      {
+        "q": "Which block in Python contains the code that might raise an exception?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "try",
+        "explanation": "The 'try' block encloses code that may potentially throw an error during execution."
+      },
+      {
+        "q": "Which keyword is used to catch and handle exceptions in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "except",
+        "explanation": "The 'except' block executes when an exception occurs inside the try block."
+      },
+      {
+        "q": "Which block always executes regardless of whether an exception occurred or not?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "finally",
+        "explanation": "The 'finally' block executes cleanup operations no matter if an exception was raised or handled."
+      },
+      {
+        "q": "Which block executes ONLY if NO exception was raised in the try block?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) except", "B) finally", "C) else", "D) catch"],
+        "ans": "C",
+        "explanation": "The 'else' block in try-except executes only when the try block completes without any errors."
+      },
+      {
+        "q": "Which keyword is used to manually trigger an exception?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "raise",
+        "explanation": "The 'raise' statement explicitly raises a specified exception."
+      },
+      {
+        "q": "What exception is raised when dividing any number by zero?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) ArithmeticError", "B) ZeroDivisionError", "C) MathError", "D) ValueError"],
+        "ans": "B",
+        "explanation": "Python raises a ZeroDivisionError when division or modulo by zero is attempted."
+      },
+      {
+        "q": "What exception occurs when accessing an index out of list bounds?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) KeyError", "B) ValueError", "C) IndexError", "D) BoundError"],
+        "ans": "C",
+        "explanation": "IndexError is raised when trying to access an invalid index in a sequence."
+      },
+      {
+        "q": "What exception occurs when looking up a non-existent key in a dictionary?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) IndexError", "B) KeyError", "C) ValueError", "D) LookupError"],
+        "ans": "B",
+        "explanation": "Accessing a missing dictionary key with dict[key] raises a KeyError."
+      },
+      {
+        "q": "What exception is raised when trying to open a file that does not exist?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) FileMissingError", "B) FileNotFoundError", "C) IOError", "D) PathError"],
+        "ans": "B",
+        "explanation": "FileNotFoundError is raised when a file or directory requested does not exist."
+      },
+      {
+        "q": "What exception is raised when converting 'abc' to an integer using int('abc')?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) TypeError", "B) ValueError", "C) CastError", "D) ConversionError"],
+        "ans": "B",
+        "explanation": "ValueError occurs when a function receives an argument of correct type but inappropriate value."
+      },
+      {
+        "q": "What is the base class for all built-in exceptions in Python?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) BaseError", "B) Exception", "C) BaseException", "D) SystemError"],
+        "ans": "C",
+        "explanation": "BaseException is the root class for all built-in exceptions in Python."
+      },
+      {
+        "q": "Custom user-defined exceptions should inherit from which class?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) Exception", "B) ErrorClass", "C) UserException", "D) RuntimeError"],
+        "ans": "A",
+        "explanation": "Custom exceptions usually inherit directly from the standard 'Exception' class."
+      },
+      {
+        "q": "What is the output of: try: x=1/0 except: x=0 finally: x=2 print(x)?",
+        "type": "mcq",
+        "difficulty": "Hard",
+        "options": ["A) 0", "B) 1", "C) 2", "D) Error"],
+        "ans": "C",
+        "explanation": "The finally block executes last and overrides x to 2 before printing."
+      },
+      {
+        "q": "Can a single try block have multiple except blocks?",
+        "type": "mcq",
+        "difficulty": "Easy",
+        "options": ["A) Yes", "B) No", "C) Maximum 2", "D) Only with finally"],
+        "ans": "A",
+        "explanation": "A try block can be followed by multiple except blocks to handle different exception types."
+      }
+    ],
+
+    "File Handling": [
+      {
+        "q": "Which built-in function is used to open a file in Python?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "open",
+        "explanation": "The open(filename, mode) function opens a file and returns a file object."
+      },
+      {
+        "q": "Which file mode opens a file for reading only (default mode)?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "r",
+        "explanation": "'r' mode opens a file for reading; raises FileNotFoundError if file doesn't exist."
+      },
+      {
+        "q": "Which mode opens a file for writing and overwrites existing contents?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "w",
+        "explanation": "'w' mode opens for writing, truncating (overwriting) the file if it already exists."
+      },
+      {
+        "q": "Which mode opens a file for appending new data at the end?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "a",
+        "explanation": "'a' mode opens for writing, appending new data to the end without overwriting existing data."
+      },
+      {
+        "q": "Which statement ensures automatic file closure even if an exception occurs?",
+        "type": "oneword",
+        "difficulty": "Medium",
+        "options": [],
+        "ans": "with",
+        "explanation": "The 'with open(...) as f:' context manager guarantees proper file closure automatically."
+      },
+      {
+        "q": "Which method reads the entire file content into a single string?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) f.readline()", "B) f.readlines()", "C) f.read()", "D) f.get()"],
+        "ans": "C",
+        "explanation": "file.read() reads the full content of the file and returns it as a string."
+      },
+      {
+        "q": "Which method reads a single line from a file?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) f.read()", "B) f.readline()", "C) f.readlines()", "D) f.line()"],
+        "ans": "B",
+        "explanation": "file.readline() reads and returns one line from the current position."
+      },
+      {
+        "q": "Which method reads all lines from a file and returns them as a list of strings?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) f.read()", "B) f.readline()", "C) f.readlines()", "D) f.list()"],
+        "ans": "C",
+        "explanation": "file.readlines() returns a list containing each line of the file as an item."
+      },
+      {
+        "q": "Which method writes a string to an opened file?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "write",
+        "explanation": "file.write(str) writes the given string to the file."
+      },
+      {
+        "q": "Which method writes a list of strings to a file?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) f.write()", "B) f.writelines()", "C) f.write_all()", "D) f.dump()"],
+        "ans": "B",
+        "explanation": "file.writelines(list_of_strings) writes multiple strings to a file."
+      },
+      {
+        "q": "What character is used in file modes to signify binary mode (e.g. images)?",
+        "type": "oneword",
+        "difficulty": "Easy",
+        "options": [],
+        "ans": "b",
+        "explanation": "'b' appended to mode (e.g., 'rb', 'wb') opens file in binary mode."
+      },
+      {
+        "q": "Which function in the json module reads JSON data directly from a file?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) json.loads()", "B) json.load()", "C) json.read()", "D) json.decode()"],
+        "ans": "B",
+        "explanation": "json.load(file_object) parses JSON data directly from an open file."
+      },
+      {
+        "q": "Which function in the json module writes Python data to a JSON file?",
+        "type": "mcq",
+        "difficulty": "Medium",
+        "options": ["A) json.dumps()", "B) json.dump()", "C) json.write()", "D) json.encode()"],
+        "ans": "B",
+        "explanation": "json.dump(obj, file_object) serializes Python objects directly into a JSON file."
+      },
+      {
+        "q": "What method checks if a file exists before opening (using os.path module)?",
+        "type": "oneword",
+        "difficulty": "Hard",
+        "options": [],
+        "ans": "exists",
+        "explanation": "os.path.exists(filename) returns True if the specified file or directory exists."
+      }
+    ]
+  }
+}
+  
+
